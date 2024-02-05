@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="1" name="API Sample" parallel="methods" thread-count="5">
+
+	<test name="Products API tests">
+		<classes>
+			<class name="com.solvd.carina.products.ProductTest" />
+		</classes>
+	</test>
+
+</suite>
