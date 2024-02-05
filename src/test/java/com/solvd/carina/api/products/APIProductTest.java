@@ -1,10 +1,11 @@
-package com.solvd.carina.products;
+package com.solvd.carina.api.products;
 
+import com.zebrunner.carina.core.IAbstractTest;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import org.skyscreamer.jsonassert.JSONCompareMode;
 import org.testng.annotations.Test;
 
-public class ProductTest {
+public class APIProductTest implements IAbstractTest {
 
     @Test
     @MethodOwner(owner = "mchutt")
