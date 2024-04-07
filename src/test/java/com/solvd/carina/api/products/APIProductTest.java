@@ -13,6 +13,9 @@ public class APIProductTest implements IAbstractTest {
         GetProductById api = new GetProductById();
         api.setId(1);
         api.callAPIExpectSuccess();
+        api.validateResponse();
+        //This line is useful to check images array existence
+        //api.validateResponse(JSONCompareMode.LENIENT, JsonCompareKeywords.ARRAY_CONTAINS.getKey() + "images");
         api.validateResponseAgainstSchema("api/products/_get/rs.schema");
     }
 

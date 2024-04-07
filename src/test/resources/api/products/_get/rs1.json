@@ -1,0 +1,29 @@
+{
+  "id": ${id},
+  "title": "${title}",
+  "description": "${description}",
+  "price": ${price},
+  "discountPercentage": ${discountPercentage},
+  "rating": ${rating},
+  "stock": ${stock},
+  "brand": "${brand}",
+  "category": "${category}",
+  "thumbnail": "${thumbnail}",
+  "images": [
+    <#if image_url_1?exists>
+      "${image_url_1}",
+    </#if>
+    <#if image_url_2?exists>
+      "${image_url_2}",
+    </#if>
+    <#if image_url_3?exists>
+      "${image_url_3}",
+    </#if>
+    <#if image_url_4?exists>
+      "${image_url_4}",
+    </#if>
+    <#if image_url_5?exists>
+      "${image_url_5}"
+    </#if>
+  ]
+}
